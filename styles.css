@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
 /* -------------------- */
 /* Shared */
 /* -------------------- */
@@ -7,8 +7,9 @@ body {
   font-family: Inter, sans-serif;
 }
 
-.bold-text {
-  font-weight: bold;
+.bold-text,
+strong {
+  font-weight: 600;
 }
 
 .icon {
@@ -84,7 +85,7 @@ input[type="search"] {
   gap: 1rem;
 }
 
-.avatar img {
+.avatar {
   border-radius: 9999px;
   width: 2rem;
   height: 2rem;
@@ -110,6 +111,95 @@ input[type="search"] {
 /* -------------------- */
 /* Hero */
 /* -------------------- */
+
+#hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.hero-text {
+  width: 40%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text > p {
+  margin-bottom: 2rem;
+}
+
+.designers {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatars .avatar {
+  width: 3rem;
+  height: 3rem;
+}
+
+.inset {
+  margin-left: -16px;
+}
+
+.avatars .avatar {
+  position: relative;
+  border: 2px solid white;
+}
+
+.hero-image {
+  width: 40%;
+  position: relative;
+}
+
+.hero-image .shape,
+.hero-image img {
+  width: 70%;
+  height: 40rem;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.hero-image img {
+  object-fit: cover;
+}
+
+.hero-image .shape {
+  border: 2px solid gainsboro;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: -1;
+}
+
+.hero-stats {
+  width: 20%;
+  align-self: flex-end;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stat h4 {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0.4rem;
+}
+
+.stat p {
+  color: #3f3f3f;
+}
 
 /* -------------------- */
 /* Card Section */
